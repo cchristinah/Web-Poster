@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Poster</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- top header -->
+    <div class="top-text">
+        <p>OCAD University</p>
+        <p>GRPH-2010-506 WINTER 2025</p>
+    </div>
+
+    <!-- title -->
+    <div class="scroll-header">
+        <div class="header-content">
+            <h1>BEYOND BIAS:</h1>
+            <h1 class="title">Building inclusive global creative collaborations</h1>
+        </div>
+    </div>
+
+    <!-- lectures -->
+    <div class="title-content">
+        <h1 class="lecture-title"><a href="#maria-section">CONTESTING THE COLONIAL EYE</a></h1>
+        <h1 class="lecture-title"><a href="#machado-section">FOSTERING INCLUSIVE COMMUNITIES IN CLASSROOMS</a></h1>
+        <h1 class="lecture-title"><a href="#wildberger-section">WEAVING STORIES IN DESIGN AND EDUCATION</a></h1>
+        <h1 class="lecture-title"><a href="#shima-section">VR MUSEUM OF MIGRANT WOMEN</a></h1>
+    </div>
+
+
+    <!-- about and more info -->
+    <div class="page-content">
+        <div class="flex-container">
+            <!-- left Box -->
+            <div class="flex-box" id="box1">
+                <button class="toggle-btn" onclick="toggleBox('box1')">About</button>
+                <p id="more-about">The International Programs & Collaborations Office at OCAD University presents International Lecture Series: Beyond Bias. This international lecture series brings together academics and researchers from around the world to share their experiences, methodologies, and scholarly approaches to fostering inclusive collaborations across borders. Focusing on the intersection of global education and creative research, the series aims to provide valuable insights on how to collaborate effectively with students and professors from diverse cultural backgrounds.</p>
+            </div>
+
+            <!-- right Box -->
+            <div class="flex-box" id="box2">
+                <button class="toggle-btn" onclick="toggleBox('box2')">More Info</button>
+                <p id="more-about">Each lecture will feature expert speakers who will share their personal journeys, research strategies, and academic examples of successful international collaborations. Emphasizing cultural awareness, the series will explore how to navigate biases, promote equity, equality, and social justice, and go beyond preconceptions to build a more inclusive and respectful global creative community. This series invites participants to reflect on their own cultural assumptions and gain tools to engage with international colleagues and students in a meaningful, ethical, and thoughtful way. By challenging misconceptions and fostering mutual understanding, we aim to create collaborations that are both globally relevant and locally responsive. Join us in this inspiring series that aims to not only expand creative boundaries but also nurture a culture of inclusivity and justice in global academic and creative research. To join these upcoming lectures, sign up through online form HERE.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- lectures -->
+    <div id="maria-section" class="lecture-section">
+        <div class="lecture-content">
+            <div class="collage-container">
+            <!-- collage layers -->
+                <div class="collage-layer layer1"></div>
+                <div class="collage-layer layer2"></div>
+                <div class="collage-layer layer3"></div>
+                <div class="collage-layer layer4"></div>
+            </div>
+
+            <!--text content-->
+            <div class="text-container">
+                <!-- presenter -->
+                <h1>Dr. Maria-Carolina Cambre</h1>
+                <p id="prof-text-desc">Associate Professor. Concordia University, Montreal CA</p>
+
+                <!-- time -->
+                <p id="prof-text-time">Tuesday, January 28th, 2025 at 9:00 am EST</p>
+
+                <!-- first tab: lecture -->
+                <p id="prof-text-bold" onclick="toggleText('cambre-lecture', this)">
+                    Contesting the colonial eye: "Burning the Mona Lisa" <span class="toggle-icon">+</span>
+                </p>
+                <div id="cambre-lecture"class="toggle-text">
+                    <p>This workshop/discussion will present ideas to work through and think about everyday resistant or subversive interactions to the colonial difference taking into consideration the affordances of international collaboration. Contesting the coloniality of how our subjectivities are being produced through capitalistic culture, I follow Argentine feminist scholar Maria Lugones in looking at “the liberation, as both adaptive and tension between subjectification and active subjectivity, that minimal sense of agency of the modern subject” (Lugones 2003).</p>
+                </div>
+
+                <!-- second tab: about -->
+                <p id="prof-text-bold" onclick="toggleText('cambre-about', this)">
+                    About <span class="toggle-icon">+</span>
+                </p>
+                <div id="cambre-about" class="toggle-text">
+                    <p>Cambre is an Argentine/Canadian scholar who explores vernacular visual expression asking: How do people produce and direct the visual space. How is the image a doing? What are the social and cultural work/ings of images? – Ideas explored in her latest article, “The Atopic Image” (Visual Studies June 2023: 38:2, 199-202). Lately, her research focuses on visual processes of legitimation, representation of online sharing, the visual politics of identity, and polymedia literacies. She is author of The Semiotics of Che Guevara: Affective gateways (2015) and co-authored The Filtered Face: Toward a Sociology of Selfies (Routledge, 2023). Cambre co-edited the collections Visual Pedagogies: Concepts, Cases & Practices (2022) and Representation/Presentation/Embodiment (2020).</p>
+                </div>
+                
+                <!-- third tab: art pieces used -->
+                <p id="prof-text-bold" onclick="toggleText('cambre-art', this)">
+                    Art pieces used <span class="toggle-icon">+</span>
+                </p>
+                <div id="cambre-art" class="toggle-text">
+                    <p>Balloon flower or Chinese bellflower (Platycodon grandiflorus (Jacq.) A.DC): flowering stem with separate fruiting stem and flowers. Coloured engraving after F. von Scheidl, 1776. </p>
+                    <p>Flyer: Feminism Lives, Pathfinder Press</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="machado-section" class="lecture-section">
+        <div class="lecture-content">
+            <div class="collage-container">
+            <!-- Collage layers -->
+                <div class="collage-layer layer1"></div>
+                <div class="collage-layer layer2"></div>
+                <div class="collage-layer layer3"></div>
+            </div>
+
+            <!-- text content -->
+            <div class="text-container">
+                <!-- presenter -->
+                <h1>Dr. Isabel Machado</h1>
+                <p id="prof-text-desc">Lecturer. Institute for Gender, Race, Sexuality and Social Justice. Faculty of Arts. University of British Columbia</p>
+                
+                <!-- time -->
+                <p id="prof-text-time">Wednesday, February 5th at 1:00 pm EST</p>
+
+                <!-- first tab: lecture -->
+                <p id="prof-text-bold" onclick="toggleText('machado-lecture', this)">
+                    Fostering Inclusive Communities in the Classroom through Project-Driven Courses <span class="toggle-icon">+</span>
+                </p> 
+                <div id="machado-lecture" class="toggle-text">
+                    <p>Isabel Machado will discuss the challenges and positive results of building inclusive classroom communities through public-facing collaborative projects by applying her research methodology to her course design. “Co-documenting” is the process of establishing partnerships and collaborations so that the research is relevant and accessible to the people involved. It is also an attempt to dismantle epistemic hierarchies and the separation between research and academic “communities.” An important element of this process is thinking about how different people can produce and share knowledges together, even when they come from diverse backgrounds and are dealing with delicate subjects. Building a project together fosters collaboration and helps the students realize that everyone can make valuable contributions to our learning community(ies) while making theory more tangible, translatable, and shareable. Yet, this is not always a smooth experience as it also involves finding together ways to deal with fears and discomfort.</p>
+                </div>
+
+                    <!-- second tab: about -->
+                <p id="prof-text-bold" onclick="toggleText('machado-about', this)">
+                    About <span class="toggle-icon">+</span>
+                </p>
+                <div id="machado-about" class="toggle-text">
+                    <p>Isabel Machado is a Brazilian cultural historian whose work often crosses national and disciplinary boundaries. She specializes in the fields of Gender and Sexuality Studies and Celebration Studies. Her first book, Carnival in Alabama: Marked Bodies and Invented Traditions in Mobile (2023), uses Mardi Gras as a vehicle to understand social and cultural changes in Mobile, Alabama in the second half of the 20th century. For the ongoing oral history project, Queens of the South(s), she is interviewing performers who defy gender normativity in different parts of the globe. She serves as co-editor-in-chief for the Journal of Festival Studies and as a host for the New Books Network Podcast and is currently a Lecturer at the University of British Columbia’s Institute for Gender, Race, Sexuality and Social Justice.</p>
+                </div>
+
+                <!-- third tab: art pieces used -->
+                <p id="prof-text-bold" onclick="toggleText('machado-art', this)">
+                    Art pieces used <span class="toggle-icon">+</span>
+                </p>
+                <div id="machado-art" class="toggle-text">
+                    <p>Ruby-Throated Hummingbird, with Trumpet Flowers</p>
+                    <p>Social In/Justice Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wildberger-section" class="lecture-section">
+        <div class="lecture-content">
+            <div class="collage-container">
+            <!-- collage layers -->
+                <div class="collage-layer layer1"></div>
+                <div class="collage-layer layer2"></div>
+                <div class="collage-layer layer3"></div>
+            </div>
+
+            <!-- text content -->
+            <div class="text-container">
+                <!-- presenter -->
+                <h1>Daniel Wildberger</h1>
+                <p id="prof-text-desc">Assistant Professor of Interaction Design (Recoding narratives: Inclusion and diversity as a path to design innovation). Emily Carr University of Art and Design</p>
+                
+                <!-- time -->
+                <p id="prof-text-time">Wednesday, March 5th at 12:00 pm EST</p>
+                
+                <!-- first tab: lecture -->
+                <p id="prof-text-bold" onclick="toggleText('wildberger-lecture', this)">
+                    Branches: Weaving Stories in Design and Education <span class="toggle-icon">+</span>
+                </p>
+                <div id="wildberger-lecture" class="toggle-text">
+                    <p>This presentation is a collaboration between Daniel Wildberger and Erik Páez, sparked by a central question: How might a former student and teacher co-design a talk that weaves their histories in design and education together? To visualize their intertwined journeys, Daniel and Erik investigate the shifting dynamics of teacher-student collaborations, exploring these narratives through multiple lenses: over time (spanning eight years), across different spaces (Mexico, USA, Brazil, and Canada), and through evolving roles. Through the creation of this metapresentation, they aim to foster a space for mutual reflection, where their individual contributions coalesce into the fabric of a collective knowledge.</p>
+                </div>
+
+                <!-- second tab: about -->
+                <p id="prof-text-bold" onclick="toggleText('wildberger-about',this)">
+                    About <span class="toggle-icon">+</span>
+                </p>
+                <div id="wildberger-about" class="toggle-text">
+                    <p> Born in Brazil, Daniel Wildberger is a multi-disciplinary designer and educator with a focus on dynamic media, interactive design, motion graphics, experience design, and visual communication. He holds a B.A. in Communication Design and Advertising from Universidade Católica do Salvador, as well as an MA and MFA from the University of Iowa, USA.
+                        Daniel’s work has been widely published and presented at international platforms, earning numerous accolades, including awards from AIGA, Creativity International, Communicators Awards, and Hermes International. Since 2009, he has been the founder and principal designer at Wild Inc., his own studio dedicated to cutting-edge design practices.
+                        Currently, Daniel is an Assistant Professor of Interaction Design at Emily Carr University of Art and Design, where he explores the intersection of design, inclusion, and innovation in his course Recoding Narratives: Inclusion and Diversity as a Path to Design Innovation. He is also the Creative Director of Wild Inc., a design studio specializing in branding, typography, web development, and motion design.</p>
+                </div>
+
+                <!-- third tab: art pieces used -->
+                <p id="prof-text-bold" onclick="toggleText('wildberger-art', this)">
+                    Art pieces used <span class="toggle-icon">+</span>
+                </p>
+                <div id="wildberger-art" class="toggle-text">
+                    <p>Textiles: silk weaving, equipment using spinning wheel. Engraving by R. Benard after L.-J. Goussier.</p>
+                    <p>Lavatera triloba: flowering stem with separate sections of flower, fruit and seed. Coloured engraving after F. von Scheidl, 1770.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="shima-section" class="lecture-section">
+        <div class="lecture-content">
+            <div class="collage-container">
+                <!-- collage layers -->
+                <div class="collage-layer layer1"></div>
+                <div class="collage-layer layer2"></div>
+                <div class="collage-layer layer3"></div>
+            </div>
+
+            <!-- text content -->
+            <div class="text-container">
+                <!-- presenter -->
+                <h1>Dr. Shima Rezaei Rashnoodi</h1>
+                <p id="prof-text-desc">Senior Researcher/lecturer at academy of AI, Games and Media. Breda University of Applied Sciences</p>
+                
+                <!-- time -->
+                <p id="prof-text-time">Wednesday, March 26 at 9:00 am EST</p>
+
+                <!-- first tab: lecture -->
+                <p id="prof-text-bold" onclick="toggleText('shima-lecture', this)">
+                    Being There: A Virtual Reality Museum of Migrant Women <span class="toggle-icon">+</span>
+                </p>
+                <div id="shima-lecture" class="toggle-text">
+                    <p>This presentation introduces Being There, a virtual reality museum that highlights the stories of migrant women from Latin America, created through a COIL project. Students from BUas (The Netherlands) and UDEM (Mexico) worked together in a multidisciplinary effort to design an immersive VR experience, partnering with the Lamentos Escuchados Migration Center in Monterrey, Mexico. The project brings to life the personal journeys of migrant women as they travel through Mexico toward the United States, focusing on their challenges, aspirations, and their concept of “home.” By digitally portraying a mother and child, the VR museum aims to foster empathy and raise awareness about the realities migrant women face. The presentation will explore the international collaboration, creative process, challenges encountered, and the project’s broader goal of building understanding and empathy for migrant women.</p>
+                </div>
+
+
+                <!-- second tab: about -->
+                <p id="prof-text-bold" onclick="toggleText('shima-about', this)">
+                    About <span class="toggle-icon">+</span>
+                </p>
+
+                <div id="shima-about" class="toggle-text">
+                    <p>Shima Rezaei Rashnoodi is a senior researcher and lecturer at Breda University of Applied Sciences in the Netherlands, specializing in immersive media particularly spatial experiences in Virtual Reality (VR) and empathy. With a background in architecture and participatory research, she has worked on projects around home in displacement and inclusive design. Throughout her career, she has contributed to several internationally funded projects within diverse domains, including health, media, training, and education, where she has developed several VR/AR experiences and volumetric capturing projects. Combining architecture, immersive media, and digital humans, she has been exploring innovative applications of immersive media for creating social impact.</p>
+                </div>
+
+                <!-- third tab: art pieces used -->
+                <p id="prof-text-bold" onclick="toggleText('shima-art', this)">
+                    Art pieces used <span class="toggle-icon">+</span>
+                </p>
+                <div id="shima-art" class="toggle-text">
+                    <p>Mother and child</p>
+                    <p>Water dropwort (Oenanthe crocata L.): flowering stem with separate root and floral segments. Coloured engraving after F. von Scheidl, 1776.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

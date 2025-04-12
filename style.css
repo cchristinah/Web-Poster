@@ -1,0 +1,276 @@
+body{
+    background-color:#e5e0da;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.top-text{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.title{
+    margin-top: -25px;
+}
+
+/* header container */
+.scroll-header{
+    position: relative;
+    height: 100vh; /* 100% of the viewport height */
+    background: url("images/TitlePlant.png") no-repeat center center/cover;
+    background-size: 75%;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns to the top */
+    opacity: 1; 
+    transform: translateY(50px); /* moves down */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+    padding-bottom: 400px;
+}
+
+.header-content{
+    margin-top: 43%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+}
+/* design for title itself */
+.scroll-header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+    
+}
+
+.scroll-header.visible .header-content{
+    opacity: 1;
+    transform: translateY(0); /* Moves back to original position */
+}
+
+.lecture-title a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.lecture-title a:hover{
+    color: #ffffff;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 100px;
+    margin-bottom: 100px;
+}
+
+.flex-box{
+    flex: 1;
+    border: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 500px;
+}
+
+.flex-box.collapsed{
+    max-height: 40px;
+    overflow: hidden;
+}
+.toggle-btn{
+    display: block;
+    margin-bottom: 10px;
+    background-color: #5c6559;
+    color: #e5e0da;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+}
+
+.toggle-btn:hover{
+    background-color: #000000;
+}
+
+.title-content{
+    margin: 150px;
+}
+#more-about{
+    font-size: 14px;
+}
+
+.lecture-section{
+    position: relative; /* Ensures collage layers are positioned relative to this section */
+    padding: 50px; /* Optional: Add padding for spacing */
+    margin-bottom: 100px; /* Optional: Add margin between sections */
+}
+
+.lecture-content{
+    display: flex;
+    align-items: center;
+}
+.collage-container{
+    position: relative;
+    width: 50%;
+    height: 400px;
+}
+
+.text-container{
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* general style for collage layers */
+.collage-layer{
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Adjust the width of the collage */
+    height: 100%; /* Adjust the height of the collage */
+    background-size: contain; /* Ensure the entire image fits within the layer */
+    background-position: center; /* Center the image vertically */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    opacity: 0; /* Initially hidden */
+    transform: translate(-50%, -50%) scale(1.5); /* Initial zoom */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth fade-in and zoom effect */
+    z-index: 1;
+}
+
+.collage-layer.visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.6); /* Visible zoom */
+
+}
+
+#prof-text-desc{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -20px;
+    font-style: italic;
+    text-align: center;
+}
+
+#prof-text-time{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+#prof-text-bold{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-icon{
+    font-size: 14px;
+    color:#5c6559;
+    transition: transform 0.3s ease;
+}
+
+#prof-text-bold:hover .toggle-icon {
+    color: #5c6559; 
+}
+
+.toggle-text{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.3s ease;
+}
+
+.toggle-text.expanded{
+    max-height: 500px; 
+    opacity: 1;
+}
+
+
+/* maria's section: specific collage layers */
+#maria-section .layer1 {
+    background-image: url("images/Burning the Mona Lisa/BurningTheMonaLisa_FeminismWins.png");
+}
+
+#maria-section .layer2 {
+    background-image: url("images/Burning the Mona Lisa/BurningTheMonaLisa_Poster.png");
+}
+
+#maria-section .layer3 {
+    background-image: url("images/Burning the Mona Lisa/BurningTheMonaLisa_Flower.png");
+}
+
+#maria-section .layer4 {
+    background-image: url("images/Burning the Mona Lisa/BurningTheMonaLisa_Carolina.png");
+}
+
+/* machado's section: specific collage layers */
+#machado-section .layer1{
+    background-image: url("images/Social Justice/SocialJustice_Flower.png");
+
+}
+
+#machado-section .layer2{
+    background-image: url("images/Social Justice/IsabelMachado.png");
+
+}
+
+#machado-section .layer3{
+    background-image: url("images/Social Justice/SocialJustice_Poster.png");
+
+}
+
+/* wildberger's section: specific collage layers */
+#wildberger-section .layer1{
+    background-image: url("images/Weaving Stories/WeavingStories_Flower.png");
+}
+
+#wildberger-section .layer2{
+    background-image: url("images/Weaving Stories/WeavingStories_Machine.png");
+}
+
+#wildberger-section .layer3{
+    background-image: url("images/Weaving Stories/WeavingStories_Daniel.png");
+}
+
+/* shima's section: specific collage layers */
+#shima-section .layer1{
+    background-image: url("images/There/There_Flower.png");
+}
+
+#shima-section .layer2{
+    background-image: url("images/There/There_Drawing.png");
+}
+
+#shima-section .layer3{
+    background-image: url("images/There/There_Shima.png");
+}
